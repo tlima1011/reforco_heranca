@@ -3,7 +3,6 @@ package application;
 import java.util.ArrayList;
 import java.util.Locale;
 import java.util.Scanner;
-
 import entities.Aviao;
 import entities.Caminhao;
 import entities.Carro;
@@ -37,7 +36,7 @@ public class Programa {
 					+ "\n[7] - Onibus"
 					+ "\n[8] - Van"
 					+ "\n[9] - Furgao"
-					+ "\n[10] - Aviao: --> ");
+					+ "\n[10] - Aviao: ==> ");
 			int tipo = sc.nextInt();
 			System.out.print("Informe a capacidade: ");
 			Integer capacidade = sc.nextInt(); 
@@ -71,7 +70,7 @@ public class Programa {
 				case 3: 
 					System.out.print("Tamanho carroceria de Caminhonete: ");
 					tamanhoCarroceria = sc.nextDouble(); 
-					possuiBau = true; 
+					possuiBau = false; 
 					veiculos.add(new Caminhao(capacidade,  velocidadeMaxima,largura, comprimento, passageiros,combustivel, peso,parado,
 							tamanhoCarroceria, possuiBau)); 
 					break;
